@@ -1,6 +1,6 @@
 import requests, os, time
 
-if not os.path.isfile("Azurith-x.py"):
+if not os.path.isfile("Azurith.py"):
     version = requests.get("https://azurith.day1337.repl.co/azurith/version.txt").text
     print(f" Installing latest version of Azurith... ({float(version)})")
     azurithfile = requests.get("https://azurith.day1337.repl.co/azurith.py").text
